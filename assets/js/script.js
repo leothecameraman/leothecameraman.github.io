@@ -146,6 +146,7 @@ function generateGallery(imagePaths) {
     const img = document.createElement("img");
     img.src = imagePath;
     img.alt = `Image ${index + 1}`;
+    img.classList.add("contained-image");
 
     imageContainer.appendChild(img);
     galleryContainer.appendChild(imageContainer);

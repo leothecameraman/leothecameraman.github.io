@@ -2,6 +2,33 @@
 
 
 
+body {
+    font-family: "Butler", serif;
+    font-weight: 300;
+    /* Normal text */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(76, 93, 80);
+    /*(76,93,80)*/
+    /*#2a1d16*/
+    color: #efebe6;
+    /* (239,237,230) */
+}
+
+.name {
+    font-family: "Butler", serif;
+    font-weight: 240;
+    font-size: 60px;
+    /* Adjust the font size as needed */
+    position: absolute;
+    top: 40px;
+    /* Adjust the top position to control vertical placement */
+    left: 60px;
+    /* Adjust the left position to control horizontal placement */
+    z-index: 2;
+    /* Place the name above other content */
+}
+
 
 /* Style for dropdown menu */
 .navbar {
@@ -19,9 +46,11 @@
 
 .dropbtn {
     font-family: "Butler", serif;
+    font-weight: 240;
     /* Apply Butler font to the menu button */
     background-color: transparent;
-    color: #2a1d16;
+    color: #efebe6;
+    /*#2a1d16*/
     padding: 14px 30px;
     font-size: 20px;
     border: none;

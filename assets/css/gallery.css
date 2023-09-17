@@ -1,31 +1,6 @@
     /* Load the Butler font from a font provider */
     @import url('https://fonts.cdnfonts.com/css/butler');
 
-    /* Apply the Butler font to specific elements */
-    body {
-      font-family: "Butler", serif;
-      font-weight: 400;
-      /* Normal text */
-      margin: 0;
-      padding: 0;
-      background-color: #efebe6;
-      color: #2a1d16;
-      /* (239,237,230) */
-    }
-
-    .name {
-      font-family: "Butler", serif;
-      font-size: 60px;
-      /* Adjust the font size as needed */
-      position: absolute;
-      top: 40px;
-      /* Adjust the top position to control vertical placement */
-      left: 60px;
-      /* Adjust the left position to control horizontal placement */
-      z-index: 2;
-      /* Place the name above other content */
-    }
-
     /* Vertical spacer */
     .spacer {
       height: 50px;
@@ -47,8 +22,6 @@
       margin: auto;
       white-space: nowrap;
       overflow: hidden;
-      max-width: 1440px;
-      max-height: 720px;
       width: 80%;
       /* Add this line to make the gallery container responsive */
       font-size: 0;
@@ -63,26 +36,26 @@
       /* Center vertically */
       max-width: 100%;
       /* Set a maximum width for the container */
-      max-height: 720px;
       /* Set a maximum height for the container */
-      width: 100%;
-      /* Allow the width to adjust according to the aspect ratio */
-      height: auto;
+      aspect-ratio: 9/6;
       text-align: center;
       /* Center the image horizontally */
     }
 
     img {
-      margin: auto;
       max-width: 100%;
-      /* Set a maximum width for the container */
-      max-height: 720px;
-      /* Set a maximum height for the container */
+      max-height: 100%;
       width: auto;
-      /* Allow the width to adjust according to the aspect ratio */
       height: auto;
     }
 
+    .photo-frame {
+      position: relative;
+      width: 100%;
+      padding-bottom: 10%;
+      background: transparent;
+      overflow: hidden;
+    }
 
     /* Move arrows outside the photo */
     .arrow {
